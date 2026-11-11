@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Location Finder</title>
+
+    <!-- Leaflet CSS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌍 City Location Finder</h1>
+        <p>Search for a city and discover its location on the map.</p>
+
+        <!-- Search Form -->
+        <form id="searchForm">
+            <label for="cityInput">Enter City Name:</label>
+
+            <input
+                type="search"
+                id="cityInput"
+                placeholder="Try Manila, Cebu, or Davao"
+                required
+            >
+
+            <button type="submit">Search City</button>
+        </form>
+
+        <!-- Status Message -->
+        <p id="status" role="status" aria-live="polite">
+            Enter a city name to get started.
+        </p>
+
+        <!-- Map -->
+        <div id="map"></div>
+    </div>
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
